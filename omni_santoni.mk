@@ -14,12 +14,25 @@
 # limitations under the License.
 #
 
-# Specify phone tech before including full_phone
-$(call inherit-product, vendor/omni/config/gsm.mk)
+# Release name
+PRODUCT_RELEASE_NAME := santoni
 
-$(call inherit-product, device/xiaomi/santoni/full_santoni.mk)
+$(call inherit-product, build/target/product/embedded.mk)
 
 # Inherit some common Omni stuff.
 $(call inherit-product, vendor/omni/config/common.mk)
 
+# Charger
+PRODUCT_PACKAGES += \
+    charger_res_images
+
+# Encryption
+PRODUCT_PACKAGES += \
+    libcryptfs_hw
+
+# Device identifier. This must come after all inclusions
+PRODUCT_DEVICE := santoni
 PRODUCT_NAME := omni_santoni
+PRODUCT_BRAND := Xiaomi
+PRODUCT_MODEL := Redmi 4
+PRODUCT_MANUFACTURER := Xiaomi

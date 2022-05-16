@@ -1,4 +1,4 @@
-TeamWin Recovery Project
+The OrangeFox Recovery Project
 
 Device configuration for Xiaomi Redmi 4[IN]/4X  (_santoni_)
 =====================================================

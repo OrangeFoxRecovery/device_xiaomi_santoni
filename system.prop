@@ -1,0 +1,5 @@
+# Platform
+ro.board.platform=msm8937
+
+# Keystore
+ro.hardware.keystore=msm8937
